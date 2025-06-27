@@ -1,0 +1,60 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+  }
+  #printContent {
+    width: 3in; /* Adjust for label printer width */
+    height: 2in; /* Adjust for label printer height */
+    padding: 0.1in;
+    box-sizing: border-box; /* Ensure padding and border are included in dimensions */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .container {
+    padding: 5px;
+    margin: 0;
+    flex: 1; /* Allow container to grow to fill space */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .center {
+    text-align: center;
+    margin-bottom: 5px; /* Reduce margin for center text */
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  table, th, td {
+    border: 1px solid #000;
+  }
+  th, td {
+    padding: 3px; /* Adjust padding to reduce overall height */
+    text-align: center;
+  }
+  .label {
+    font-weight: bold;
+    padding-right: 5px;
+  }
+  /* New style for aligning QR code and customer name */
+  .qr-code-container {
+    margin-top: 3px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;  
+  }
+  .poppins-regular {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  }
+  .poppins-bold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  }

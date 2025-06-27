@@ -1,0 +1,157 @@
+body {
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f2;
+}
+
+h1 {
+    font-weight: 700;
+    margin: auto;
+    text-align: center;
+    margin-top: 5px;
+    font-size: 32px;
+    color: #333;
+}
+
+#container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Ensure all items are at the top */
+    padding: 10px;
+    align-items: center;
+    max-width: 400px;
+    margin: 0 auto;
+    background-color: white;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    margin-top: 10px;
+}
+
+label {
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: #555;
+    font-size: 14px;
+    width: 100%;
+    text-align: left;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    font-size: 14px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    outline: none;
+    box-sizing: border-box;
+    transition: border-color 0.3s;
+}
+
+input[type="text"]:focus {
+    border-color: rgb(17, 89, 223);
+}
+
+button#chipbin {
+    background-color: rgb(17, 89, 223);
+    color: white;
+    font-weight: 400;
+    font-family: "Poppins", sans-serif;
+    border: none;
+    border-radius: 16px;
+    padding: 12px;
+    width: 100%;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-size: 16px;
+}
+
+button#chipbin:hover {
+    background-color: rgb(12, 53, 128);
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 28px;
+    }
+
+    #container {
+        width: 90%;
+        padding: 15px;
+    }
+
+    input[type="text"] {
+        padding: 10px;
+    }
+
+    button#order {
+        padding: 10px;
+    }
+}
+
+/* General dropdown container style */
+select {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    font-size: 14px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    outline: none;
+    box-sizing: border-box;
+    background-color: white;
+    color: #333;
+    appearance: none; /* Removes default browser styling */
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    transition: border-color 0.3s, background-color 0.3s;
+}
+
+/* Add custom dropdown arrow */
+select::-ms-expand {
+    display: none;
+}
+
+select:focus {
+    border-color: rgb(17, 89, 223);
+    background-color: #f4f4f7;
+}
+
+/* Optional: Styling for the dropdown container (e.g., a div) if needed */
+.select-container {
+    position: relative;
+    width: 100%;
+}
+
+/* Custom dropdown arrow */
+.select-container::after {
+    content: '▼';
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #888;
+    font-size: 12px;
+    pointer-events: none;
+}
+
+/* Style for the dropdown options */
+option {
+    padding: 10px;
+    background-color: white;
+    color: #333;
+    font-size: 14px;
+    border: none;
+}
+
+option:hover {
+    background-color: rgb(17, 89, 223);
+    color: white;
+}
+
+/* Additional hover effect for select itself */
+select:hover {
+    border-color: rgb(17, 89, 223);
+}

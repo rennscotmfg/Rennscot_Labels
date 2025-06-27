@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Rennscot Labels</title>
+        <link rel="stylesheet" href="WO-popup.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    </head>
+    <body id="body">
+        <h1>Rennscot Labels</h1>
+        <div id="container">
+            <button id="wo">Print WO Label</button>
+            <div id="container">
+                <button id="label1x2">Print 1x2 Label</button>
+                <label class = "serialization-label"><input type="checkbox" id="1x2-serialization">Serialization</label>
+            <div class="serialization-numbers" id="1x2-serialization-numbers">
+                <label>From: </label><input type="text" id="1x2-s_1" value="1"><br>
+                <label>To: </label><input type="text" id="1x2-s_2">
+            </div>
+            <div id="container">
+                <button id="inspection">Print Inspection Label</button>
+                <label class="options-label"><input type="checkbox" id="inspection-options-button">Options</label>
+            </div>
+            <div id="inspection-options">
+                <label class = "serialization-label"><input type="checkbox" id="inspection-serialization">Serialization</label>
+                <div class="serialization-numbers" id="inspection-serialization-numbers">
+                    <label>From: </label><input type="text" id="inspection-s_1" value="1"><br>
+                    <label>To: </label><input type="text" id="inspection-s_2">
+                </div>
+                <div class="inspection-task-options">
+                    <label class="ipc-label">Full IPC every <input type="text" id="ipc-num" style="width: 3ch;"> parts</label>
+                </div>
+                <div class="inspection-task-options">
+                    <label class = "task-label"><input type="checkbox" id="cmm" checked>CMM</label>
+                    <label class = "task-label"><input type="checkbox" id="hand" checked>Hand Check</label>
+                    <label class = "task-label"><input type="checkbox" id="data" checked>Data in Proshop</label>
+                    <label class = "task-label"><input type="checkbox" id="other">Other</label>
+                    <input type="text" id="other-task" placeholder="Task Name">
+                </div>
+            </div>
+        </div>
+        </div>
+        <script src="WO-popup.js"></script>
+    </body>
+</html>

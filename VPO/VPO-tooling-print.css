@@ -1,0 +1,62 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+  }
+#printContent {
+  width: 3in; /* Adjust for label printer width */
+  height: 2in; /* Adjust for label printer height */
+  padding: 0.1in;
+  box-sizing: border-box; /* Ensure padding and border are included in dimensions */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+#header {
+  font-size: 18px;
+}
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.container {
+  padding: 2px;
+  margin: 0;
+  flex: 1; /* Allow container to grow to fill space */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.center {
+  text-align: center;
+  margin-bottom: 3px; /* Reduce margin for center text */
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+table, th, td {
+  border: 1px solid #000;
+}
+th, td {
+  padding: 2px; /* Adjust padding to reduce overall height */
+  text-align: center;
+}
+.label {
+  padding-right: 3px;
+}
+.poppins-regular {
+font-family: "Poppins", sans-serif;
+font-weight: 400;
+font-style: normal;
+font-size: 10px;
+}
+.poppins-bold {
+font-family: "Poppins", sans-serif;
+font-weight: 700;
+font-style: normal;
+font-size: 11px;
+}

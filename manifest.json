@@ -1,0 +1,38 @@
+{
+  "manifest_version": 3,
+  "name": "Rennscot Labels",
+  "version": "1.9",
+  "permissions": [
+    "scripting",
+    "activeTab"
+  ],
+  "host_permissions": [
+    "https://rennscot.adionsystems.com/procnc/*"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_icon": {
+      "16": "images/Rennscot16.png",
+      "32": "images/Rennscot32.png",
+      "48": "images/Rennscot48.png",
+      "128": "images/Rennscot128.png"
+    }
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://rennscot.adionsystems.com/procnc/*"
+      ],
+      "js": ["content-script.js"],
+      "run_at": "document_end"
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": ["print.html"],
+      "matches": ["<all_urls>"]
+    }
+  ]
+}

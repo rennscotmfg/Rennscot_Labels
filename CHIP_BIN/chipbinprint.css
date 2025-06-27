@@ -1,0 +1,72 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* The 3x2 Inch Box */
+.container {
+  width: 3in;
+  height: 2in;
+  padding: 0.1in;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Centered Row 1 */
+.material-row {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-weight: 700;
+  font-size: 25px;
+  flex-grow: 1;
+}
+
+/* Bottom Row */
+.date-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 700;
+  font-size: 18px;
+  padding: 2px 4px;
+  width: 100%;
+}
+
+.rennscot {
+  width: 265px;
+  height: 70px;
+}
+
+/* Adjustments for Printing */
+@media print {
+  /* Remove default margins for the printed page */
+  @page {
+    margin: 0;
+  }
+
+  body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    display: flex;
+    justify-content: center; /* Centering content horizontally */
+    align-items: center; /* Centering content vertically */
+    height: 100vh; /* Full height for body */
+  }
+
+  /* Center the container within the printable area */
+  .container {
+    width: 3in;
+    height: 2in;
+    padding: 0.1in;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+}

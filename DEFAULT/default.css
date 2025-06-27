@@ -1,0 +1,57 @@
+body {
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    margin: 0;
+    padding: 0;
+    width: 190px;
+    height: 200px;
+    background-color: #f0f0f2;
+}
+
+h1 {
+    font-weight: 700;
+    margin: auto;
+    text-align: center;
+    margin-top: 20px;
+}
+
+#container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10px;
+    align-items: center;
+    
+    button {
+        margin: 5px 0;
+        width: 150px;
+    }
+}
+
+button#chipbin {
+    background-color: rgb(17, 89, 223);
+    color: white;
+    font-weight: 400;
+    font-family: "Poppins", sans-serif;
+    border: none;
+    border-radius: 12px;
+    height: 30px;
+}
+
+button#chipbin:hover {
+    background-color: rgb(12, 53, 128);
+}
+
+button#order {
+    background-color: rgb(151, 17, 223);
+    color: white;
+    font-weight: 400;
+    font-family: "Poppins", sans-serif;
+    border: none;
+    border-radius: 12px;
+    height: 40px;
+}
+
+button#order:hover {
+    background-color: rgb(85, 12, 128);
+}

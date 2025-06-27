@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Rennscot Labels</title>
+        <link rel="stylesheet" href="chipbin-popup.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    </head>
+    <body id="body">
+        <h1>Rennscot Labels</h1>
+        <div id="container">
+            <label for="material_type">Material Type:</label>
+            <select id="material_type">
+                <option value="ALUMINUM 6XXX">ALUMINUM 6XXX</option>
+                <option value="ALUMINUM 7XXX">ALUMINUM 7XXX</option>
+                <option value="STAINLESS 3XX">STAINLESS 3XX</option>
+                <option value="STAINLESS 4XX">STAINLESS 4XX</option>
+                <option value="STAINLESS PH">STAINLESS PH</option>
+                <option value="INCONEL">INCONEL</option>
+                <option value="TITANIUM">TITANIUM</option>
+                <option value="MIXED">MIXED</option>
+                <option value="Other">Other</option>
+            </select>
+            <input type="text" id="material_type_other" placeholder="Enter Material Type" style="display: none;">
+            <label for="material_form">Material Form:</label>
+            <select id="material_form">
+                <option value="CHIPS">CHIPS</option>
+                <option value="SOLIDS">SOLIDS</option>
+                <option value="Other">Other</option>
+            </select>
+            <input type="text" id="material_form_other" placeholder="Enter Material Form" style="display: none;">
+        </div>
+        <div id="container">
+            <button id="chipbin">Print Chip Bin Label</button>
+        </div>
+        <script src="chipbin-popup.js"></script>
+    </body>
+</html>

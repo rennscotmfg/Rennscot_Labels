@@ -1,0 +1,64 @@
+body {
+    margin: 0; /* Remove default body margin */
+    padding: 0; /* Remove default body padding */
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    height: 100vh; /* Make the body take up the full viewport height */
+    background: #f0f0f0; /* Optional: Add a background for visualization */
+}
+
+.container {
+    width: 3in;
+    height: 2in;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black; /* Optional: to visualize the box */
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    position: relative;
+}
+
+/* Style the table to fit within the container */
+table {
+    width: 100%;
+    height: 100%;
+    border-collapse: collapse;
+    border: 1px solid black;
+}
+
+/* Style the table cells */
+td {
+    padding-left: 4px;
+    padding-right: 4px;
+    font-size: 10px; /* Default font size for all cells */
+    font-weight: bold;
+    border: 1px solid black;
+}
+
+.title {
+    width: 30px;
+    text-align: center;
+}
+
+.name {
+    font-size: 25px;
+}
+
+.qr-code {
+    position: absolute; /* Position the QR code absolutely within the container */
+    bottom: 5px; /* Adjust as needed to position from the bottom */
+    right: 5px; /* Adjust as needed to position from the right */
+    width: 80px; /* Set the size of the QR code */
+    height: 80px; /* Set the size of the QR code */
+    background: white; /* Optional: Add a background to make the QR code stand out */
+    border: 1px solid black; /* Optional: Add a border for better visibility */
+    box-sizing: border-box;
+}
+
+.qr-code img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensure the QR code image fits within the container */
+}

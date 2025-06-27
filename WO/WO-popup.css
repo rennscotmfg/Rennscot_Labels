@@ -1,0 +1,111 @@
+body {
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    margin: 0;
+    padding: 0;
+    width: 190px;
+    height: 200px;
+    background-color: #f0f0f2;
+}
+
+h1 {
+    font-weight: 700;
+    margin: auto;
+    text-align: center;
+    margin-top: 20px;
+}
+
+#container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10px;
+    align-items: center;
+    
+    button {
+        margin: 5px 0;
+        height: 30px;
+        width: 150px;
+    }
+}
+
+button#wo {
+    background-color: rgb(17, 89, 223);
+    color: white;
+    font-weight: 400;
+    font-family: "Poppins", sans-serif;
+    border: none;
+    border-radius: 12px;
+}
+
+button#wo:hover {
+    background-color: rgb(12, 53, 128);
+}
+
+
+button#inspection {
+    background-color: rgb(24, 172, 56);
+    color: white;
+    font-weight: 400;
+    font-family: "Poppins", sans-serif;
+    border: none;
+    border-radius: 12px;
+    height: 40px;
+}
+
+button#inspection:hover {
+    background-color: rgb(12, 128, 31);
+}
+
+button#label1x2 {
+    background-color: rgb(85, 84, 84);
+    color: white;
+    font-weight: 400;
+    font-family: "Poppins", sans-serif;
+    border: none;
+    border-radius: 12px;
+}
+
+button#label1x2:hover {
+    background-color: rgb(53, 52, 52);
+}
+
+.serialization-label {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    padding-top: 0px;
+}
+
+.serialization-numbers {
+    display: none;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    padding: 10px;
+    input {
+        width: 30px;
+    }
+}
+
+#inspection-options {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+.inspection-task-options {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+
+#other-task {
+    display: none;
+}

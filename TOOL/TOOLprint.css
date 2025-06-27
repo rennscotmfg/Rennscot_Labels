@@ -1,0 +1,44 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+  }
+  #printContent {
+    width: 2in; /* Adjust for label printer width */
+    height: 1in; /* Adjust for label printer height */
+    padding: 0.1in;
+    box-sizing: border-box; /* Ensure padding and border are included in dimensions */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  #header {
+    font-size: 30px;
+    padding-right: 10px;
+  }
+  .qr-code-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 5px; /* Adjust spacing between QR code and customer name */
+  }
+  .tool-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .poppins-regular {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 10px;
+  }
+  .poppins-bold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 12px;
+  }
