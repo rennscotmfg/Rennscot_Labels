@@ -24,6 +24,8 @@ chrome.tabs.onActivated.addListener((activeInfo) => {
           popupFile = 'RTA/RTA-popup.html';
         } else if (url.includes('parts')) {
           popupFile = 'PARTS_KANBAN/parts-popup.html';
+        } else if (url.includes('ots')) {
+          popupFile = 'COTS/COTS-popup.html';
         }
   
         // If a valid popup was determined, set it

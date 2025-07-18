@@ -18,7 +18,10 @@ function checkAndSendPopupRequest() {
       popupFile = 'RTA/RTA-popup.html';
     } else if (url.includes('parts')) {
       popupFile = 'PARTS_KANBAN/parts-popup.html';
+    } else if (url.includes('ots')) {
+      popupFile = 'COTS/COTS-popup.html';
     }
+    
   
     // If there's a match, send a message to the background script
     if (popupFile) {
